@@ -10,7 +10,7 @@ DM_EMBEDDER_MEDIAPRIMA = "https://www.tonton.com.my"
 @app.route('/mediaprima')
 def mediaprima():
     """
-    To access a channel, go to http://<local_ip>/mediaprima?channel_metadata=<channel_metadata>
+    To access a channel, go to http://<local_ip>:<port_no>/mediaprima?channel_metadata=<channel_metadata>
     """
     channel_metadata = request.args.get("channel_metadata")
 
